@@ -1,0 +1,6 @@
+TO RUN THE PROGRAMM 32 TIMES 
+Python3 resart.py -n 32 --collection "foo"
+
+"foo": folder in the output collection 
+-n : no of images you want 
+--collection : folder name 

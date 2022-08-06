@@ -36,7 +36,7 @@ def interpolate(start_color, end_color, factor: float):
 
 
 def generate_art(collection: str, name: str): 		#GENRATING ARTWORK
-    print("Generating art")
+    print("Generating art please wait for high resolution images")
 
     # Figure out where we are going to put it.
     output_dir = os.path.join("output", collection)
@@ -44,7 +44,7 @@ def generate_art(collection: str, name: str): 		#GENRATING ARTWORK
 
     # Set size parameters.
     rescale = 2
-    image_size_px = 128 * rescale
+    image_size_px = 720 * rescale
     padding = 12 * rescale
 
     # Create the directory and base image.
@@ -53,7 +53,7 @@ def generate_art(collection: str, name: str): 		#GENRATING ARTWORK
     image = Image.new("RGB", (image_size_px, image_size_px), bg_color)
 
     # How many lines do we want to draw?
-    num_lines = 10
+    num_lines = 11
     points = []
 
     # Pick the colors.
